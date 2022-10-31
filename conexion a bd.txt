@@ -1,0 +1,4 @@
+mongosh "mongodb+srv://cluster88.o1oql6j.mongodb.net/myFirstDatabase" --apiVersion 1 --username sa
+
+
+mongodb+srv://sa:<password>@cluster88.o1oql6j.mongodb.net/AQUI_BD?retryWrites=true&w=majority

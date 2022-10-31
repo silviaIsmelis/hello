@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const URI = process.env.MONGODB_URI
   ? process.env.MONGODB_URI
-  : "mongodb://localhost:27017/bd_TEA";
+  : "mongodb+srv://sa:mongodb88@cluster88.o1oql6j.mongodb.net/testTea?retryWrites=true&w=majority";
 
 console.log(URI);
 mongoose.connect(URI, (err, db) => {

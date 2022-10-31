@@ -9,13 +9,13 @@ const eschemaUser = new eschema({
     type: String,
     required: true,
     trim: true,
-    unique: true
+    unique: true,
   },
   nombre: String,
   email: String,
   telefono: String,
-  iduser: String,
 });
+
 
 const ModelUser = mongoose.model("user", eschemaUser);
 
@@ -28,7 +28,6 @@ router.post("/agregarUser", (req, res) => {
     nombre: req.body.nombre,
     email: req.body.email,
     telefono: req.body.telefono,
-    iduser: req.body.iduser,
   });
   nuevoUser.save((err) => {
     if (!err) {
